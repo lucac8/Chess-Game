@@ -121,7 +121,7 @@ function piecesStart() {
         return row.map(function (cell) {
             if (cell == "n") return
             let square = document.getElementById(`${cell.pos}`)
-            square.style.backgroundImage = `url('../pieces/${cell.color}/${cell.icon}.png')`;
+            square.style.backgroundImage = `url('./pieces/${cell.color}/${cell.icon}.png')`;
         });
     })
 }
